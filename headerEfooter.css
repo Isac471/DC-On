@@ -33,6 +33,156 @@ body {
     }
     
     nav.scrolled {
+        body {
+    display: flex;
+    flex-direction: column;
+  
+    overflow-x: hidden;
+  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    background-color:  red;
+    width: 100%;
+    color: white;
+  }
+  /* Header */
+  
+  nav {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+ 
+      align-items: center;
+    
+      width: 100%;
+      height: 8vh;
+      padding-left: 2vh;
+    
+      font-family: "JetBrains Mono", sans-serif;
+    
+      background-color:white;
+      transition: 0.2s all;
+      z-index: 9999;
+    }
+    
+    nav.scrolled {
+      height: 6vh;
+      background-color: white;
+      opacity: 90%;
+    }
+    nav.scrolled #imagem-login{
+      width: 5vh;
+    }
+    nav h1 {
+      font-size: 3.5vh;
+      font-family: "Poppins", sans-serif;
+      letter-spacing: 0.03vh;
+      color: rgb(255, 0, 0);
+    }
+    
+    nav ul {
+      display: flex;
+    
+      width: 100%;
+    
+      list-style: none;
+    }
+    
+    nav li {
+      margin-left: 1%;
+    }
+    
+    nav a {
+      color: rgb(255, 0, 0);
+      text-decoration: none;
+    
+      font-size: auto;
+      padding: 1vh;
+      border-radius: 1vh;
+    
+      cursor: pointer;
+      transition: 0.2s all;
+    }
+    
+    nav ul a:hover {
+      background-color: rgba(0, 0, 0, 0.255);
+    }
+    /* logo Empresa 
+    #LgEmpresa{
+      width: 45px;
+    }
+     logo Empresa */
+    
+    /* Footer */
+    #github:hover{
+      transform: scale(1.2);
+      transition-delay: 0.2s;
+      transition-duration: 0.5s;
+    }
+    #instagram:hover{
+      transform: scale(1.2);
+      transition-delay: 0.2s;
+      transition-duration: 0.5s;
+    }
+    #gmail:hover{
+      transform: scale(1.2);
+      transition-delay: 0.2s;
+      transition-duration: 0.5s;
+    }
+    #whatsapp:hover{
+      transform: scale(1.2);
+      transition-delay: 0.2s;
+      transition-duration: 0.5s;
+    }
+    a{
+      color: red;
+    }
+    img{
+      width: 15.22vh;
+      color: white;
+      margin: 1.5vh 1.5vh;
+    }
+
+  /* Scroll*/
+  ::-webkit-scrollbar {
+    width: 0.76vh;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 5vh;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgb(255, 0, 0);
+  }
+  /* Scroll*/ 
+
+
+  /* Login  */
+
+#imagem-login{
+  transition: 0.2s all;
+  margin-top: 2vh;
+  width: 7vh;
+}
+#imagem-login:hover{
+  transform: scale(1.2);
+  transition-delay: 0.2s;
+  transition-duration: 0.5s;
+}
+#login-separacao{
+  width: 52vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+h5{
+  color: red;
+}
       height: 6vh;
       background-color: white;
       opacity: 90%;
